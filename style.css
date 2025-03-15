@@ -24,13 +24,13 @@ section{
 .heading{
     text-align: center;
     font-size: 4rem;
-    color: #333;
+    color: white;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(158, 236, 247, 0.5);
+    background: #75ccf5;
 }
 .heading span{
-    color: white;
+    color: #101010;
 }
 .btn{
     display: inline-block;
@@ -43,7 +43,7 @@ section{
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: var(---pink);
+    background: #66b1d4;
 }
 header{
     position: fixed;
@@ -63,11 +63,11 @@ header .logo{
     font-weight: bolder;
 }
 header .logo span{
-    color: var(---pink);
+    color: #66b1d4;
 }
 header .navbar.a{
     color: #666;
-    font-size: 9rem;
+    font-size: 15rem;
 }
 header .navbar a:hover{
     color: var(---pink);
@@ -99,27 +99,27 @@ header .fa-bars{
     min-height: 100vh;
     /* background-image:url('logo.png'); */
     /* background-position: right; */
-    background-color:rgb(188, 247, 250) ;
+    background-color:#101010 ;
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+   
 }
 .home .content{
     max-width:60rem ;
 }
 .home .content h6{
     font-size: 3.5rem;
-    color: black;
+    color: white;
 }
 .home .content span{
     font-size: 3.5rem;
-    color: rgb(48, 82, 192);
+    color: #75ccf5;
     padding: 1rem 0;
     line-height: 1.5;
 }
 .home .content p{
     font-size: 1.5rem;
-    color: black;
+    color: white;
     padding:1rem 0 ;
     line-height: 1.5;
 }
@@ -132,6 +132,9 @@ header .fa-bars{
     transform: translateY(-50%);
     /* opacity: 0.8; */
     z-index: 0;
+}
+.about{
+    background-color: #101010;
 }
 .about .row{
     display: flex;
@@ -155,13 +158,13 @@ header .fa-bars{
 }
 .about .row .video-container h3{
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%);
     font-size: 4rem;
     color: #333;
     background: #fff;
     width: 100%;
-    padding-inline: 1rem 2rem;
+    padding-inline: 7rem 3rem;
     text-align: center;
     mix-blend-mode: screen;
 }
@@ -170,17 +173,17 @@ header .fa-bars{
 }
 .about .row .content h3{
     font-size: 3rem;
-    color: #333;
+    color: #75ccf5;
 }
 .about .row .content p{
     font-size: 1.5rem;
-    color: #999;
+    color: white;
     padding: 5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
 }
 .icons-container{
-    background: #eee;
+    background: #101010;
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
@@ -210,14 +213,18 @@ header .fa-bars{
     color: #555;
     font-size: 1.3rem;
 }
+.products{
+    background-color: #101010;
+}
 .products .box-container{
      display: flex;
      flex-wrap: wrap;
      gap: 1.5rem;
 }
+
 .products .box-container .box{
     flex: 1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0,0, .1);
+    box-shadow: 0 .5rem 1.5rem grey;
     border-radius: .5rem;
     border: 1rem solid rgba(0, 0,0, .1);
     position: relative;
@@ -228,7 +235,7 @@ header .fa-bars{
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: #e84393;
+    color: #101010;
     background: rgba(255, 51,153, .05);
     z-index: 1;
     border-radius: .5rem;
@@ -260,7 +267,7 @@ header .fa-bars{
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background:rgb(188, 247, 250) ;
+    background:#75ccf5 ;
     color: #fff;
 }
 .products .box-container .box .image .icons .cart-btn{
@@ -277,20 +284,26 @@ header .fa-bars{
 }
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color: #333;
+    color: #101010;
 }
 .products .box-container .box .content .price{
     font-size: 2.5rem;
-    color: aquamarine;
+    color: #101010;
     font-weight: bolder;
     padding-top: 1rem;
 }
 .products .box-container .box .content .price span{
     font-size: 1.5rem;
-    color: aquamarine;
+    color: #101010;
     font-weight: lighter;
     text-decoration: line-through;
     
+}
+.products .box-container .box{
+    background-color: white;
+}
+.review{
+    background-color: #101010;
 }
 .review .box-container{
     display: flex;
@@ -299,6 +312,7 @@ header .fa-bars{
 }
 .review .box-container .box{
     flex: 1 1 30rem;
+    background-color: white;
     box-shadow: 1 .5rem 1.5rem rgba(0, 0,0, .1);
     border-radius: .5rem;
     padding: 3rem 2rem;
@@ -317,7 +331,8 @@ header .fa-bars{
     font-size: 2rem;
 }
 .review .box-container .box p{
-    color: #999;
+    color: #8a8787;
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 1.5;
     padding-top: 2rem;
@@ -341,6 +356,9 @@ header .fa-bars{
 .review .box-container .box .user span{
     font-size: 1.5rem;
     color: #999;
+}
+.contact{
+    background-color: #101010;
 }
 .contact .row{
     display: flex;
@@ -397,11 +415,11 @@ header .fa-bars{
     padding: 1rem 0;
 }
 .footer .box-container .box a:hover{
-    color: aqua;
+    color: #75ccf5 ;
     text-decoration: underline;
 }
 .footer .box-container .box img{
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 .footer .credit{
     text-align: center;
