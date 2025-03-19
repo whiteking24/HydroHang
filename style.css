@@ -1,5 +1,5 @@
 :root{
-    ---pink:#e84393;
+    --pink:#75ccf5;
 }
 *{
     margin: 0;
@@ -43,19 +43,22 @@ section{
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: #66b1d4;
+    background: #75ccf5;
+    color: #fff;
+    transform: scale(1.05);
 }
 header{
     position: fixed;
     top: 0;
-    left: 0;right: 0;
+    left: 0;
+    right: 0;
     background: #fff;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 header .logo{
     font-size: 3rem;
@@ -65,12 +68,13 @@ header .logo{
 header .logo span{
     color: #66b1d4;
 }
-header .navbar.a{
+header .navbar a{
     color: #666;
-    font-size: 15rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
 }
 header .navbar a:hover{
-    color: var(---pink);
+    color: var(--pink);
 }
 header .icons a{
     font-size: 2.5rem;
@@ -78,7 +82,7 @@ header .icons a{
     margin-left: 1.5rem;
 }
 header .icons a:hover{
-    color: var(---pink);
+    color: var(--pink);
 }
 header #toggler{
     display: none;
@@ -97,8 +101,6 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    /* background-image:url('logo.png'); */
-    /* background-position: right; */
     background-color:#101010 ;
     background-size: cover;
     background-position: center;
@@ -112,7 +114,7 @@ header .fa-bars{
     color: white;
 }
 .home .content span{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #75ccf5;
     padding: 1rem 0;
     line-height: 1.5;
@@ -132,6 +134,23 @@ header .fa-bars{
     transform: translateY(-50%);
     /* opacity: 0.8; */
     z-index: 0;
+}
+/* Typing animation */
+/* Typing animation without cursor line */
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end); /* Remove blink-caret animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 .about{
     background-color: #101010;
@@ -159,12 +178,12 @@ header .fa-bars{
 .about .row .video-container h3{
     position: absolute;
     top: 40%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     font-size: 4rem;
     color: #333;
     background: #fff;
     width: 100%;
-    padding-inline: 7rem 3rem;
+    padding-inline: 1rem 3rem;
     text-align: center;
     mix-blend-mode: screen;
 }
@@ -192,12 +211,12 @@ header .fa-bars{
 }
 .icons-container .icons{
     background: #fff;
-    border: .1rem solid rgba(0, 0, 0, 1);
+    border: .1rem solid rgba(0, 0, 0, 0.1);
     padding: 3rem;
     display: flex;
     align-items: center;
     flex: 1 1 25rem;
-    width: 10px;
+    /* width: 10px; */
 }
 
 .icons-container .icons img{
@@ -235,8 +254,8 @@ header .fa-bars{
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: #101010;
-    background: rgba(255, 51,153, .05);
+    color: #fff;
+    background: #e84393;
     z-index: 1;
     border-radius: .5rem;
 }
@@ -324,7 +343,7 @@ header .fa-bars{
     bottom: 3rem;
     right: 3rem;
     font-size: 6rem;
-    color: #eee;
+    color: #75ccf5;
 }
 .review .box-container .box .star i{
     color: #555;
@@ -389,7 +408,7 @@ header .fa-bars{
     margin: .7rem 0;
 }
 .contact .row form .box:focus{
-    border-color: aqua;
+    border-color: #75ccf5;
 }
 .contact .row form textarea{
     height: 15rem;
@@ -418,14 +437,22 @@ header .fa-bars{
     color: #75ccf5 ;
     text-decoration: underline;
 }
-.footer .box-container .box img{
-    margin-top: .5rem;
+/* Footer image styling */
+.footer-image {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 2rem; /* Add space above the image */
+}
+
+.footer-image img {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
 .footer .credit{
     text-align: center;
     padding: 1.5rem;
     margin-top: 1.5rem;
-    padding-top: 2,5rem;
+    padding-top: 2.5rem;
     font-size: 2rem;
     color: #333;
     border-top: .1rem solid rgba(0, 0,0, .1);
@@ -433,7 +460,208 @@ header .fa-bars{
 .footer .credit span{
     color: aqua;
 }
-  
+.user-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.user-modal .modal-content{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+.user-modal .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.user-modal h3 {
+    margin-bottom: 1rem;
+}
+
+.user-modal input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.user-modal .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.user-modal p {
+    margin-top: 1rem;
+}
+
+.user-modal a {
+    color: #75ccf5;
+    text-decoration: none;
+}
+
+.user-modal a:hover {
+    text-decoration: underline;
+}
+.remove-btn{
+    font-size: 2rem;
+    color: #ff0000;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0 1rem;
+}
+.remove-btn:hover{
+    color: #cc0000;
+}
+ .fa-shopping-cart, .fa-heart{
+    position: relative;
+} 
+.fa-shopping-cart[data-count]::after, fa-heart[data-count]::after{
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--pink);
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+} 
+ /* Message Styling */
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #75ccf5;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1rem;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+.dropdown h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cart-item, .wishlist-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cart-item img, .wishlist-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cart-item-details, .wishlist-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3, .wishlist-item-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cart-item-details p, .wishlist-item-details p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.buy-now {
+    background: #75ccf5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buy-now:hover {
+    background: #66b1d4;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+}
+.product-message{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #75ccf5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    z-index: 1000;
+    animation: fadeInOut 2s ease-in-out;
+}
+@keyframes fadeInOut{
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 @media(max-width:991px){
     html{
@@ -450,6 +678,7 @@ header .fa-bars{
     } 
     .home .home-image{
         background-position: right;
+        display: none;
     }
 }
 @media(max-width:768px){

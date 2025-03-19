@@ -6,6 +6,7 @@
     <title>WATERMATE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!--Header section starts-->
@@ -25,6 +26,19 @@
             <a href="#" class="fas fa-shopping-cart"></a>
             <a href="#" class="fas fa-user"></a>
         </div>
+        <div class="dropdown" id="cart-dropdown">
+            <h3>your cart</h3>
+            <div class="cart-items">
+
+            </div>
+        </div>
+
+        <div class="dropdown" id="wishlist-dropdown">
+            <h3>your wishlist</h3>
+            <div class="wishlist-items">
+
+            </div>
+        </div>
     </header>
     <!--Header section ends-->
 
@@ -33,9 +47,9 @@
         <img src="logo-new.png" alt="logo imag" class="home-image">
         <div class="content">
             <h6>hang it right, bottle it tight </h6>
-            <span>welcome to HydroHang</span>
+            <span class="typing-text">welcome to HydroHang</span>
             <p>your one-stop destination for premium water bottles and versatile dress hangers.designed for durability and style,our products make everyday life easier.explore our collection and upgrade your essentials today!</p>
-            <a href="#" class="btn">shop now</a>
+            <a href="#products" class="btn">shop now</a>
         </div>
     </section>
     <!--Home section ends-->
@@ -219,6 +233,21 @@
             <div class="box">
                 <span class="discount">-5%</span>
                 <div class="image">
+                    <img src="snuffer.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>snuffer</h3>
+                    <div class="price">rs.250<span>rs.300</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
                     <img src="velvet hangers.png" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
@@ -228,7 +257,7 @@
                 </div>
                 <div class="content">
                     <h3>velvet hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.199<span>rs.250</span></div>
                 </div>
             </div>
             <div class="box">
@@ -243,7 +272,7 @@
                 </div>
                 <div class="content">
                     <h3>three set hangers</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.299<span>rs.350</span></div>
                 </div>
             </div>
             <div class="box">
@@ -258,7 +287,7 @@
                 </div>
                 <div class="content">
                     <h3>sizers clip</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.99<span>rs.120</span></div>
                 </div>
             </div>
             <div class="box">
@@ -273,7 +302,7 @@
                 </div>
                 <div class="content">
                     <h3>set hangers</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.249<span>rs.300</span></div>
                 </div>
             </div>
             <div class="box">
@@ -288,7 +317,7 @@
                 </div>
                 <div class="content">
                     <h3>plastic top hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.149<span>rs.180</span></div>
                 </div>
             </div>
             <div class="box">
@@ -303,7 +332,7 @@
                 </div>
                 <div class="content">
                     <h3>outwear hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.349<span>rs.400</span></div>
                 </div>
             </div>
             <div class="box">
@@ -318,7 +347,7 @@
                 </div>
                 <div class="content">
                     <h3>multi pack hangers</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.499<span>550</span></div>
                 </div>
             </div>
             <div class="box">
@@ -333,7 +362,7 @@
                 </div>
                 <div class="content">
                     <h3>metal top hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.199<span>rs.250</span></div>
                 </div>
             </div>
             <div class="box">
@@ -348,7 +377,7 @@
                 </div>
                 <div class="content">
                     <h3>innerwear hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.99<span>rs.150</span></div>
                 </div>
             </div>
             <div class="box">
@@ -363,7 +392,7 @@
                 </div>
                 <div class="content">
                     <h3>hooks</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.79<span>rs.130</span></div>
                 </div>
             </div>
             <div class="box">
@@ -378,7 +407,7 @@
                 </div>
                 <div class="content">
                     <h3>home textile hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.399<span>rs.450</span></div>
                 </div>
             </div>
             <div class="box">
@@ -393,7 +422,7 @@
                 </div>
                 <div class="content">
                     <h3>frok hangers</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.199<span>rs.250</span></div>
                 </div>
             </div>
             <div class="box">
@@ -408,7 +437,7 @@
                 </div>
                 <div class="content">
                     <h3>bottom hangers</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.149<span>rs.200</span></div>
                 </div>
             </div>
             <div class="box">
@@ -423,12 +452,13 @@
                 </div>
                 <div class="content">
                     <h3>belt hanger</h3>
-                    <div class="price">$12.99<span>$15.99</span></div>
+                    <div class="price">rs.129<span>rs.160</span></div>
                 </div>
             </div>
+            
+
             </div>
     </section>
-
     <!--product section ends-->
 
     <!--review section starts-->
@@ -519,11 +549,11 @@
         <div class="box-container">
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">product</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#products">product</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
             </div>
 
             <div class="box">
@@ -534,7 +564,7 @@
             </div>
 
             <div class="box">
-                <h3>locatons</h3>
+                <h3>locations</h3>
                 <a href="#">india</a>
                 <a href="#">USA</a>
                 <a href="#">japan</a>
@@ -544,15 +574,51 @@
             <div class="box">
                 <h3>contact info</h3>
                 <a href="#">+123-456-7890</a>
-                <a href="#">abcd@gmail.com</a>
-                <a href="#">cochin, india - 400104</a>
-                <img src="payment.png" alt="">
+                <a href="#">priniya@gmail.com</a>
+                <a href="https://maps.google.com?q=cochin,india-400104">cochin, india - 400104</a>
             </div>
         </div>
-        <div class="credit">created by<span> ms.web desiners</span> | all rights reserved</div>
+        <div class="footer-image">
+            <img src="payment.png" alt="payment methods">
+        </div>
+        <div class="credit">created by<span> priniya designers</span> | all rights reserved</div>
     </section>
     <!--footer section ends-->
+    <!--sign up page-->
+    <!-- User Modal -->
+<div class="user-modal" id="user-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="auth-forms">
+            <!-- Sign In Form -->
+            <form id="signin-form">
+                <h3>Sign In</h3>
+                <input type="email" id="signin-email" placeholder="Email" required>
+                <input type="password" id="signin-password" placeholder="Password" required>
+                <button type="submit" class="btn">Sign In</button>
+                <p>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+            </form>
 
+            <!-- Sign Up Form -->
+            <form id="signup-form" style="display: none;">
+                <h3>Sign Up</h3>
+                <input type="text" id="signup-name" placeholder="Name" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+                <p>Already have an account? <a href="#" id="switch-to-signin">Sign In</a></p>
+            </form>
+        </div>
 
+        <!-- User Details -->
+        <div id="user-details" style="display: none;">
+            <h3>User Details</h3>
+            <p><strong>Name:</strong> <span id="user-name"></span></p>
+            <p><strong>Email:</strong> <span id="user-email"></span></p>
+            <button class="btn" id="logout-btn">Logout</button>
+        </div>
+    </div>
+</div>
+        <script src="script.js"></script>
 </body>
 </html>
