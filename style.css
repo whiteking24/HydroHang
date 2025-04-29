@@ -21,6 +21,9 @@ html{
 section{
     padding: 2rem 9%;
 }
+.email {
+  text-transform: lowercase !important;
+}
 .heading{
     text-align: center;
     font-size: 4rem;
